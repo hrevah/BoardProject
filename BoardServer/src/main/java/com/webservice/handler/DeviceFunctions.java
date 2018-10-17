@@ -1,6 +1,6 @@
 package com.webservice.handler;
 
-public class ControllerFunctions {
+public class DeviceFunctions {
 
 
 }

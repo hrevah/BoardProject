@@ -33,7 +33,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -70,11 +73,6 @@
 			<groupId>org.eclipse.mylyn.github</groupId>
 			<artifactId>org.eclipse.egit.github.core</artifactId>
 			<version>2.1.5</version>
-		</dependency>
-		<dependency>
-			<groupId>com.facebook.presto</groupId>
-			<artifactId>presto-jdbc</artifactId>
-			<version>0.197</version>
 		</dependency>
 	</dependencies>
 
