@@ -10,41 +10,44 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@android:color/holo_green_dark"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/time_of_the_day"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
-            android:text="זמני היום" />
+            android:textColor="@android:color/black"
+            android:paddingTop="@dimen/title_paddding_second_level"
+            android:text="@string/time_of_the_day"
+            android:textSize="@dimen/title_second_level" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.7"
-        android:background="@android:color/holo_purple"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center_horizontal"
-            android:text="בית כנסת ״דרכי אבות״" />
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_header_footer"
+            android:text="@string/header" />
 
         <TextClock
-            android:id="@+id/textClock"
+            android:id="@+id/clock"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:format12Hour="hh:mm:ss a"
             android:format24Hour="hh:mm:ss"
             android:gravity="center_horizontal"
-            android:textColor="#d41709"
+            android:textColor="@android:color/black"
             android:textSize="44sp"
             android:textStyle="bold" />
 
@@ -54,20 +57,24 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/shabatOut"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:text="צאת שבת" />
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_level_three"
+                android:text="@string/shabat_out" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/shabatIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:text="כניסת שבת" />
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_level_three"
+                android:text="@string/shabat_in" />
         </LinearLayout>
 
         <LinearLayout
@@ -77,23 +84,36 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/shabatBoker"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:text="שחרית שבת" />
+                android:textSize="@dimen/title_level_three"
+                android:textColor="@android:color/black"
+                android:text="@string/shabat_boker" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/shabatErev"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
+                android:textSize="@dimen/title_level_three"
+                android:textColor="@android:color/black"
                 android:scrollHorizontally="false"
-                android:text="ערבית שבת" />
+                android:text="@string/shabat_erev" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_header_footer"
+            android:text="@string/footer" />
 
     </LinearLayout>
 
@@ -101,15 +121,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@android:color/holo_red_dark"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/lectures"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="@dimen/title_second_level"
+            android:textColor="@android:color/black"
+            android:paddingTop="@dimen/title_paddding_second_level"
             android:gravity="center_horizontal"
-            android:text="שיעורים" />
+            android:text="@string/lectures" />
     </LinearLayout>
 </LinearLayout>
